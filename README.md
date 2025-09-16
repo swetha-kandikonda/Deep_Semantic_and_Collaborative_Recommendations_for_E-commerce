@@ -1,1 +1,1 @@
-# Amazon-Product-Recommendation-System
+# Deep Semantic & Collaborative Recommendations for E-commerce
