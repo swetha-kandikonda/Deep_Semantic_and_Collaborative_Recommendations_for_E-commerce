@@ -104,7 +104,7 @@ A qualitative analysis was conducted to assess the model's practical behavior. F
 ![Figure 9: User Recommendation Profile](./figs/User%20Recommendation%20Profile%20Analysis.png)
 *Figure 9: User Recommendation Profile Analysis*
 
-![Figure 10: Example Recommendations](https://i.imgur.com/your-image-link-for-figure10.png)
+![Figure 10: Example Recommendations](./figs/Example%20Recommendations.png)
 *Figure 10: Example of Recommended Games for a Specific User*
 
 ## Conclusion
