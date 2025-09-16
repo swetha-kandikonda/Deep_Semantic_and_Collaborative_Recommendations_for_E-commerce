@@ -24,21 +24,18 @@ Our methodology involved designing an end-to-end pipeline to transform raw data 
 
 To address these limitations, we adopted a hybrid framework incorporating content-based filtering (CBF) to integrate item attributes with interaction patterns. This approach helps mitigate cold-start scenarios and improve personalization.
 
-<<<<<<< HEAD
-![Figure 1: Architecture of a Hybrid Recommendation System](figs/Architecture of a Hybrid Recommendation System.png)
-=======
-![Figure 1: Architecture of a Hybrid Recommendation System](<img width="496" height="263" alt="image" src="https://github.com/user-attachments/assets/f7e73204-4582-4421-a0cc-52a158c17e20" />)
->>>>>>> e56dc740c7cc452b0440a7bc27af3f8b8e911811
+
+![Figure 1: Architecture of a Hybrid Recommendation System](./figs/Architecture%20of%20a%20Hybrid%20Recommendation%20System.png))
 *Figure 1: Architecture of a Hybrid Recommendation System*
 
 
 
-![Figure 2: Hybrid Recommendation System Employing a Hybridization Module](https://i.imgur.com/your-image-link-for-figure2.png)
+![Figure 2: Hybrid Recommendation System Employing a Hybridization Module](./figs/Hybrid%20Recommendation%20System%20Employing%20a%20Hybridization%20Module.png)
 *Figure 2: Hybrid Recommendation System Employing a Hybridization Module*
 
 The Amazon Video Games dataset used lacked detailed structured features (e.g., genre, platform), limiting traditional CBF methods. To overcome this, we used Large Language Models (LLMs), specifically Sentence-BERT, to transform review text and metadata into dense semantic embeddings. These embeddings serve as rich proxy product descriptions, enabling the system to model relationships between items even without structured features.
 
-![Figure 3: Enhancing Item Representation using LLMs](https://i.imgur.com/your-image-link-for-figure3.png)
+![Figure 3: Enhancing Item Representation using LLMs](./figs/Enhancing%20Item%20Representation%20using%20Large%20Language%20Models%20(LLMs).png)
 *Figure 3: Enhancing Item Representation using Large Language Models (LLMs)*
 
 ### End-to-End Workflow
@@ -57,12 +54,12 @@ The system architecture follows a six-step process from data collection to analy
 An EDA was performed to understand the dataset's characteristics.
 * **Ratings Distribution:** The ratings showed a strong positive skew towards 4 and 5 stars, indicating a generally satisfied user base. This motivated the use of ranking-based metrics over simple accuracy.
 
-    ![Figure 5: Distribution of Ratings](https://i.imgur.com/your-image-link-for-figure5.png)
+    ![Figure 5: Distribution of Ratings](./figs/Analysis%20of%20User%20Rating%20Frequency.png)
     *Figure 5: Analysis of User Rating Frequency*
 
 * **User Activity:** The analysis revealed a "long-tail" distribution, where a few "power users" contribute a large number of reviews. This confirmed the presence of data sparsity and justified our data filtering strategy.
 
-    ![Figure 6: Long-Tail Distribution of User Activity](https://i.imgur.com/your-image-link-for-figure6.png)
+    ![Figure 6: Long-Tail Distribution of User Activity](./figs/Long-Tail%20Distribution%20of%20User%20Review%20Activity.png)
     *Figure 6: Long-Tail Distribution of User Review Activity*
 
 #### 3. Content-Based Filtering (Sentence-BERT)
@@ -70,7 +67,7 @@ An EDA was performed to understand the dataset's characteristics.
 * A new text feature was created by concatenating each product's title, summary, and description, which was then transformed into a 384-dimensional vector.
 * t-SNE visualization confirmed that these embeddings effectively clustered games of similar genres.
 
-    ![Figure 7: t-SNE Visualization of Product Embeddings](https://i.imgur.com/your-image-link-for-figure7.png)
+    ![Figure 7: t-SNE Visualization of Product Embeddings](./figs/2D%20Projection%20of%20Product%20Embeddings%20Using%20t-SNE.png)
     *Figure 7: 2D Projection of Product Embeddings Using t-SNE*
 
 #### 4. Collaborative Filtering (SVD)
@@ -97,14 +94,14 @@ The model demonstrated strong performance across several ranking-based metrics.
 | **F1@10** | 16.06% |
 | **NDCG@10** | 21.36% |
 
-![Figure 8: Hybrid Model Evaluation Metrics](https://i.imgur.com/your-image-link-for-figure8.png)
+![Figure 8: Hybrid Model Evaluation Metrics](/figs/Hybrid%20Recommendation%20System%20Employing%20a%20Hybridization%20Module.png)
 *Figure 8: Evaluation Metrics for the Hybrid Recommendation Model*
 
 ### Qualitative Analysis
 
 A qualitative analysis was conducted to assess the model's practical behavior. For a user who enjoyed fighting games, the system logically recommended other highly-rated games in the same genre, such as *Marvel Vs. Capcom 2* and *Super Smash Bros Melee*, demonstrating its ability to capture nuanced genre preferences.
 
-![Figure 9: User Recommendation Profile](https://i.imgur.com/your-image-link-for-figure9.png)
+![Figure 9: User Recommendation Profile](./figs/User%20Recommendation%20Profile%20Analysis.png)
 *Figure 9: User Recommendation Profile Analysis*
 
 ![Figure 10: Example Recommendations](https://i.imgur.com/your-image-link-for-figure10.png)
