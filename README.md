@@ -24,8 +24,14 @@ Our methodology involved designing an end-to-end pipeline to transform raw data 
 
 To address these limitations, we adopted a hybrid framework incorporating content-based filtering (CBF) to integrate item attributes with interaction patterns. This approach helps mitigate cold-start scenarios and improve personalization.
 
+<<<<<<< HEAD
 ![Figure 1: Architecture of a Hybrid Recommendation System](figs/Architecture of a Hybrid Recommendation System.png)
+=======
+![Figure 1: Architecture of a Hybrid Recommendation System](<img width="496" height="263" alt="image" src="https://github.com/user-attachments/assets/f7e73204-4582-4421-a0cc-52a158c17e20" />)
+>>>>>>> e56dc740c7cc452b0440a7bc27af3f8b8e911811
 *Figure 1: Architecture of a Hybrid Recommendation System*
+
+
 
 ![Figure 2: Hybrid Recommendation System Employing a Hybridization Module](https://i.imgur.com/your-image-link-for-figure2.png)
 *Figure 2: Hybrid Recommendation System Employing a Hybridization Module*
