@@ -25,7 +25,7 @@ Our methodology involved designing an end-to-end pipeline to transform raw data 
 To address these limitations, we adopted a hybrid framework incorporating content-based filtering (CBF) to integrate item attributes with interaction patterns. This approach helps mitigate cold-start scenarios and improve personalization.
 
 
-![Figure 1: Architecture of a Hybrid Recommendation System](./figs/Architecture%20of%20a%20Hybrid%20Recommendation%20System.png))
+![Figure 1: Architecture of a Hybrid Recommendation System](./figs/Architecture%20of%20a%20Hybrid%20Recommendation%20System.png)
 *Figure 1: Architecture of a Hybrid Recommendation System*
 
 
@@ -42,7 +42,7 @@ The Amazon Video Games dataset used lacked detailed structured features (e.g., g
 
 The system architecture follows a six-step process from data collection to analysis.
 
-![Figure 4: End-to-End Recommendation System Workflow](https://i.imgur.com/your-image-link-for-figure4.png)
+![Figure 4: End-to-End Recommendation System Workflow](/figs/End-to-End%20Recommendation%20System%20Workflow.png)
 *Figure 4: End-to-End Recommendation System Workflow*
 
 #### 1. Data Collection & Preprocessing
